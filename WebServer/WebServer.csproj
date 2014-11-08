@@ -269,7 +269,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="README.md" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

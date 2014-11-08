@@ -16,7 +16,7 @@ Vad behöver du ha installerat?
 Sätt upp projektet:
 ====================
 
-1. Går till den folder där du vill ha projektet och kör 'git clone https://github.com/olofd/bokaettband.git' från CMD (Kommandotolken)
+1. Gå till den mapp där du vill ha projektet och kör 'git clone https://github.com/olofd/bokaettband.git' från CMD (Kommandotolken)
 2. Ställ dig i roten på projektet där du har .sln-filen.
 3. Kör 'nuget restore Bokaettband.sln'
 4. Navigera till /FrontEnd (cd .../FrontEnd)

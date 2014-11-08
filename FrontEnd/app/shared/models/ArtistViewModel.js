@@ -1,0 +1,1 @@
+//# sourceMappingURL=ArtistViewModel.js.map

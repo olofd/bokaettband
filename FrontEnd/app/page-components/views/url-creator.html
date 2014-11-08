@@ -1,0 +1,21 @@
+﻿<ng-form class="form-horizontal md-update" name="urlform">
+    <div class="form-group">
+        <label for="inputProfileUrl" class="col-lg-2 control-label">Profil-url</label>
+        <div class="col-lg-10">
+            <input type="text" ng-change="vm.profileUrlUpdated()" class="form-control" id="inputProfileUrl" placeholder="Din url" ng-model="vm.ProfileUrl" name="profileUrl"  required>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputProfileUrl" class="col-lg-2 control-label">Profil-url slutgiltig</label>
+        <div class="col-lg-10">
+            <h4>{{profileUrlEncoded}}</h4>
+            <div ng-show="urlform.profileUrl.$invalid">
+                <span class="form-validation-error" ng-show="urlform.profileUrl.$error.isAvaliable">
+                    Din URL är uppdatagen, modifiera den till en tillgänglig url.
+                </span>
+            </div>
+        </div>
+    </div>
+</ng-form>

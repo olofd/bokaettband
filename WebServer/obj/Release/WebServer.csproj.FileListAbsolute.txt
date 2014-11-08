@@ -1,0 +1,4 @@
+c:\proj\bokaettband\bokaettbandfrontend\dist\webserver\Bokaettband.dll
+c:\proj\bokaettband\bokaettbandfrontend\dist\webserver\Bokaettband.pdb
+C:\Proj\Bokaettband\Bokaettband\bin\System.Web.Http.dll
+C:\Proj\Bokaettband\Bokaettband\bin\System.Web.Http.Owin.dll

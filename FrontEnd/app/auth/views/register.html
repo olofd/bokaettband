@@ -1,0 +1,104 @@
+﻿<div class="container">
+    <div class="row start-height">
+        <div class="col-md-6">
+            <div class="well">
+                <form class="form-horizontal md-update" name="form">
+                    <fieldset>
+                        <legend>Regristrera dig!</legend>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">E-mail</label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" ng-model="vm.user.Email" name="email" required>
+                                <div ng-show="form.email.$dirty && form.email.$invalid">
+                                    <span class="form-validation-error" ng-show="form.email.$error.required">Fyll i en emial</span>
+                                    <span class="form-validation-error" ng-show="form.email.$error.email">Ogiltig email-adress!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Förnamn</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputFistName" placeholder="Förnamn" ng-model="vm.user.FirstName" name="firstName" required>
+                                <div ng-show="form.firstName.$dirty && form.firstName.$invalid">
+                                    <span class="form-validation-error" ng-show="form.firstName.$error.required">Fyll i ditt förnamn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Efternamn</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputLastname" placeholder="Efternamn" ng-model="vm.user.LastName" name="lastName" required>
+                                <div ng-show="form.lastName.$dirty && form.lastName.$invalid">
+                                    <span class="form-validation-error" ng-show="form.lastName.$error.required">Fyll i ditt Efternamn</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-lg-2 control-label">Lösenord</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Lösenord" ng-model="vm.user.Password" name="password" ng-minlength="6" required>
+                                <div ng-show="form.password.$dirty && form.password.$invalid">
+                                    <span class="form-validation-error" ng-show="form.password.$error.required">Skriv i ett lösenord</span>
+                                    <span class="form-validation-error" ng-show="form.password.$error.minlength">Ditt lösenord måste vara minst sex bokstäver/siffror långt</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-lg-2 control-label">Upprepa lösenord</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Upprepa lösenord" ng-model="vm.user.ConfirmPassword" name="passwordConfirm" pw-check="inputPassword" required>
+                                <div ng-show="form.passwordConfirm.$dirty && form.passwordConfirm.$invalid">
+                                    <span class="form-validation-error" ng-show="form.passwordConfirm.$error.required">Du måste upprepa ditt lösenord</span>
+                                    <span class="form-validation-error" ng-show="form.passwordConfirm.$error.pwmatch">Löenordet måste vara identiskt med det ovan</span>
+                                </div>
+                            </div>
+                        </div>
+                        <fieldset>
+                            <legend>
+                                Profil-url
+                                <i style="cursor:pointer;" class="icon-material-help" ng-click="vm.profileHelpIsCollapsed = !vm.profileHelpIsCollapsed"></i>
+                            </legend>
+
+                            <div class="panel panel-info" collapse="vm.profileHelpIsCollapsed">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Vad är profilurl?</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Profilurl:en är din adressen till din personliga sida.
+                                    Om du bara fyller i ditt namn ovan kommer systemet skapa en url som
+                                    är http://www.bokaettband.se/förnamnefternamn. Om denna är upptagen
+                                    eller om du vill ha någon annan adress kan du dock ändra adressen i textboxen nedan.
+                                    Du får dock bara använda tecken som r giltiga i en URL/Adress.<br />
+                                    <strong>
+                                        OBS! Om du regristrerar en adress som semantiskt är någon annans ex: http://www.brokaettband.se/metallica
+                                        kan du komma att förlora denna adress vid efterfrågan.
+                                    </strong>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div url-creator base-url="vm.baseUrl" profile-url-encoded="vm.encodedUrl" first-param="vm.user.FirstName" second-param="vm.user.LastName"></div>
+
+                        <p>
+                            När du klickar på Regristrera godkänner du våra användarvillkor och bekräftar att du har läst vår policy för dataanvändning, inklusive vår Cookie-användning.
+                        </p>
+
+                        <div class="form-actions">
+                            <div class="col-lg-10">
+                                <button type="submit" ng-click="vm.registerUser()" ng-disabled="form.$invalid || vm.isLoading" class=" btn btn-material-lightgreen">Regristrera</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="well">
+                <fieldset>
+                    <legend>Logga in med annan tjänst.</legend>
+                </fieldset>
+
+            </div>
+        </div>
+    </div>
+</div>

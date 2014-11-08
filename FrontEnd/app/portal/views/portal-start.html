@@ -1,0 +1,73 @@
+﻿<div class="container-fluid">
+    <h1>Välkommen till bokaettband.se {{vm.FirstName}}!</h1>
+    <p>
+        I menyn till vänster kan du navigera bland dina egna sidor. Där har du din
+        personliga profil. beroende på vad du kommer använda bokaettband.se till så har du här lite olika valmöjligheter.
+
+    </p>
+
+
+    <div class="list-group" style="margin-top:50px;">
+        <div class="list-group-item">
+            <div class="row-action-primary">
+                <i class="mdi-image-audiotrack"></i>
+            </div>
+            <div class="row-content">
+                <div class="least-content"></div>
+                <h4 class="list-group-item-heading">
+                    <a ui-sref="^.create({type : 'band'})">
+                        Skapa band/artist
+                    </a>
+
+                </h4>
+                <p class="list-group-item-text">
+                    Du är musiker och vill använda sidan för att hitta arrangörer eller andra musiker.
+                    Klicka då här för att skapa ett nytt band. Du kommer då få en ny profil för denna artistsida
+                    och en inkorg där du kan kommunicera med andra meddlemmar/arrangörer på bokaettband.se.
+                    Du kan ha ett flertal artistsidor.
+                </p>
+            </div>
+        </div>
+        <div class="list-group-separator"></div>
+        <div class="list-group-item">
+            <div class="row-action-primary">
+                <i class="mdi-action-perm-phone-msg"></i>
+            </div>
+            <div class="row-content">
+                <div class="least-content"></div>
+                <h4 class="list-group-item-heading">
+                    <a href="#">
+                        Skapa arrangörssida
+                    </a>
+                </h4>
+                <p class="list-group-item-text">
+                    Du är arrangör av ett publikt liveställe eller kommer använda bokaettband.se under en längre tid för att leta efter
+                    artister och boka spelningar. Klicka då här för att skapa en profil för din arrangörssida och en inkorg där du kan
+                    kommunicera med band och artister eller andra arrangörer.
+                    Du kan ha ett flertal arrangörssidor.
+                </p>
+            </div>
+        </div>
+        <div class="list-group-separator"></div>
+        <div class="list-group-item">
+            <div class="row-action-primary">
+                <i class="mdi-action-face-unlock"></i>
+            </div>
+            <div class="row-content">
+                <div class="least-content"></div>
+                <h4 class="list-group-item-heading">
+                    <a href="#">
+                        Skapa personlig profil
+                    </a>
+                </h4>
+                <p class="list-group-item-text">
+                    Du använder bokaettband.se som privatperson, antingen för att leta efter ett band för en enstaka spelning eller
+                    för att hitta rolig musik att lyssna på. Om du helt enkelt inte stämmer in på valen ovan är detta valet för dig, där du endast
+                    kommer ha din egna personliga profil och inkorg. Klicka då här för att påbörja skapandet av din perosnliga profil.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>

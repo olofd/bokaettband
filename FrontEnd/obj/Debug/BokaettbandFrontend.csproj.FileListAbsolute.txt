@@ -1,0 +1,6 @@
+C:\Proj\Bokaettband\BokaettbandFrontend\bin\BokaettbandFrontend.dll.config
+C:\Proj\Bokaettband\BokaettbandFrontend\bin\BokaettbandFrontend.dll
+C:\Proj\Bokaettband\BokaettbandFrontend\bin\BokaettbandFrontend.pdb
+C:\Proj\Bokaettband\BokaettbandFrontend\obj\Debug\BokaettbandFrontend.csprojResolveAssemblyReference.cache
+C:\Proj\Bokaettband\BokaettbandFrontend\obj\Debug\BokaettbandFrontend.dll
+C:\Proj\Bokaettband\BokaettbandFrontend\obj\Debug\BokaettbandFrontend.pdb

@@ -1,0 +1,1 @@
+{"version":3,"file":"material-style-udater.js","sourceRoot":"","sources":["material-style-udater.ts"],"names":[],"mappings":"AAAA,OAAO,CAAC,MAAM,CAAC,oBAAoB,CAAC,CAAC,SAAS,CAAC,UAAU,EAAE;IAAC,uBAAuB,EAAE,UAAC,qBAAqB;QACtG,OAAO;YACJ,QAAQ,EAAE,GAAG;YACZ,IAAI,EAAE,UAAC,KAAK,EAAE,OAAO,EAAE,KAAK;gBACxB,QAAS;gBACV,qBAAqB,CAAC,qBAAqB,CAAC,CAAC;YACjD,CAAC;SACJ;IACJ,CAAC,CAAC,CAAC"}

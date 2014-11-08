@@ -1,0 +1,119 @@
+﻿<div class="container">
+    <div class="row start-height">
+        <div class="col-md-5">
+
+            <h1>Välkommen!</h1>
+            <p class="lead">
+                Livemusik är så roligt...
+            </p>
+            <p>
+                ..och det är dags för en svenk portal för arrangörer och musiker som vill hitta varandra!
+                Har du ett eget band? Är du arrangör för ett liveställe? Ska du gifta dig och letar efter ett band som passar just er?
+                <div>
+                    <a ui-sref="baseState.register" class="btn btn-sup btn-material-pink btn-raised">
+                        <i class="icon-material-create"></i>
+                        <span style="margin-left:5px;">
+                            Regristrera dig idag!
+                        </span>
+                    </a>
+                </div>
+
+            </p>
+        </div>
+        <div class="col-md-7">
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-9 col-xs-12">
+                        <div class="form-group">
+                            <label for="select" class="col-lg-2 control-label">Välj</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" id="select">
+                                    <option>Band/Artister</option>
+                                    <option>Arrangörer</option>
+                                    <option>Spelningar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="paper" style="width: 100%; height:700px;" data-raphael-map region-data="vm.regions"></div>
+
+                    </div>
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <ul class="regionslist">
+                            <li>
+                                <a class="region_link_list" id="area_1" href="http://www.blocket.se/nbl.htm" data-region="1">Norrbotten</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_2" href="http://www.blocket.se/vasterbotten?ca=2" data-region="2">Västerbotten</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_3" href="http://www.blocket.se/jamtland?ca=3" data-region="3">Jämtland</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_4" href="http://www.blocket.se/vasternorrland?ca=4" data-region="4">Västernorrland</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_5" href="http://www.blocket.se/gavleborg?ca=5" data-region="5">Gävleborg</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_6" href="http://www.blocket.se/dalarna?ca=6" data-region="6">Dalarna</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_7" href="http://www.blocket.se/varmland?ca=7" data-region="7">Värmland</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_8" href="http://www.blocket.se/orebro?ca=8" data-region="8">Örebro</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_9" href="http://www.blocket.se/vastmanland?ca=9" data-region="9">Västmanland</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_10" href="http://www.blocket.se/uppsala?ca=10" data-region="10">Uppsala</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_11" href="http://www.blocket.se/stockholm?ca=11" data-region="11">Stockholm</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_12" href="http://www.blocket.se/sodermanland?ca=12" data-region="12">Södermanland</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_13" href="http://www.blocket.se/skaraborg?ca=13" data-region="13">Skaraborg</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_14" href="http://www.blocket.se/ostergotland?ca=14" data-region="14">Östergötland</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_15" href="http://www.blocket.se/goteborg?ca=15" data-region="15">Göteborg</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_16" href="http://www.blocket.se/alvsborg?ca=16" data-region="16">Älvsborg</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_17" href="http://www.blocket.se/jonkoping?ca=17" data-region="17">Jönköping</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_18" href="http://www.blocket.se/kalmar?ca=18" data-region="18">Kalmar</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_19" href="http://www.blocket.se/gotland?ca=19" data-region="19">Gotland</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_20" href="http://www.blocket.se/halland?ca=20" data-region="20">Halland</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_21" href="http://www.blocket.se/kronoberg?ca=21" data-region="21">Kronoberg</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_22" href="http://www.blocket.se/blekinge?ca=22" data-region="22">Blekinge</a>
+                            </li>
+                            <li>
+                                <a class="region_link_list" id="area_23" href="http://www.blocket.se/skl.htm" data-region="23">Skåne</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

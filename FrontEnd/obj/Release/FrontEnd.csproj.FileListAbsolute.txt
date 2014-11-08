@@ -1,0 +1,2 @@
+c:\proj\bokaettband\bokaettbandfrontend\dist\webserver\BokaettbandFrontend.dll
+c:\proj\bokaettband\bokaettbandfrontend\dist\webserver\BokaettbandFrontend.pdb

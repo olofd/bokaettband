@@ -1,0 +1,5 @@
+<li class="dropdown" ng-if="vm.menuItems"><a class="dropdown-toggle" data-toggle="dropdown">{{vm.loggedInUser.FirstName}} {{vm.loggedInUser.LastName}}<b class="caret"></b></a><ul class="dropdown-menu"><!--<li>
+                <a ui-sref='baseState.profile({url : loggedInUser.Url})'>
+                    {{vm.loggedInUser.FirstName}}s profil
+                </a>
+            </li>--><li><a ui-sref="baseState.portal.page.start({user : loggedInUser.Url})"><strong>Ny sida</strong><br></a></li><li ng-repeat="page in vm.menuItems"><a ui-sref="baseState.profile({url : page.Url})" ui-sref-active="active"><hr style="margin-top:5px; margin-bottom:5px"><strong>{{page.Name}}</strong><br><span>Växla användare</span></a></li><li><a ui-sref="baseState.portal.page.start({user : loggedInUser.Url})"><hr style="margin-top:5px; margin-bottom:5px"><strong>Inställningar</strong><br></a></li><li><a ng-click="vm.logOut()" href="javascript:void(0)">Logga ut</a></li></ul></li>

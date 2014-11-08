@@ -1,0 +1,3 @@
+c:\proj\bokaettband\bokaettbandfrontend\dist\webserver\Backend.dll.config
+c:\proj\bokaettband\bokaettbandfrontend\dist\webserver\Backend.dll
+c:\proj\bokaettband\bokaettbandfrontend\dist\webserver\Backend.pdb

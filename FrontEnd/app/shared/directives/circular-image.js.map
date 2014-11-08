@@ -1,0 +1,1 @@
+{"version":3,"file":"circular-image.js","sourceRoot":"","sources":["circular-image.ts"],"names":[],"mappings":"AAAA,OAAO,CAAC,MAAM,CAAC,YAAY,CAAC,CAAC,SAAS,CAAC,eAAe,EAAE,CAAC;IAErD,MAAM,CAAC;QACH,IAAI,EAAG,UAAC,KAAK,EAAE,OAAO,EAAE,KAAK;QAE7B,CAAC;QACD,WAAW,EAAE,sCAAsC;QACnD,OAAO,EAAG,IAAI;KACjB,CAAA;AACL,CAAC,CAAC,CAAC,CAAA"}

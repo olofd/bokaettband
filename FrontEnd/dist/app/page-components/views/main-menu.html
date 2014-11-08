@@ -1,0 +1,24 @@
+<div class="bs-component"><div class="navbar navbar-default"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <i class="icon-"></i> <a class="navbar-brand withripple" href="/">Bokaettband.se<div class="ripple-wrapper"></div></a></div><div class="navbar-collapse collapse navbar-responsive-collapse"><ul class="nav navbar-nav"><li ng-class="{ active: $state.includes('baseState.startPage') }"><a href="/">Start</a></li><!--<li><a href="javascript:void(0)">Spelningar i sverige</a></li>--></ul><form class="navbar-form navbar-left"><div class="form-control-wrapper"><input type="text" class="form-control col-lg-8 empty" placeholder="Sök band/arrangör"><span class="material-input"></span></div></form><ul class="nav navbar-nav navbar-right"><li ng-if="!loggedInUser" ui-sref-active="active"><a ui-sref="baseState.register">Regristrera dig</a></li><li ng-if="!loggedInUser" ui-sref-active="active"><a ui-sref="baseState.login">Logga in</a></li><user-menu></user-menu><!--<li class="dropdown" ng-if="loggedInUser">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                       Mina sidor <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a ui-sref='baseState.portal.page.start({user : loggedInUser.Url})'>Skapa ny sida</a>
+                        </li>
+                        <li>
+                            <a ui-sref='baseState.profile({url : loggedInUser.Url})'>{{loggedInUser.FirstName}}s profil</a>
+                        </li>
+                        <li>
+                            <a ng-click="vm.logOut()" href="javascript:void(0)">Logga ut</a>
+                        </li>
+                    </ul>
+                </li>--><!-- <li class="dropdown" ng-if="loggedInUser">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        {{loggedInUser.UserName}} <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref='baseState.portal.page.start({user : loggedInUser.Url})'>Profil</a></li>
+                        <li><a ng-click="vm.logOut()" href="javascript:void(0)">Logga ut</a></li>
+                    </ul>
+                </li>--></ul></div></div></div>
